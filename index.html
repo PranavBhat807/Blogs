@@ -4,75 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>The Importance of Lifelong Learning</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-
-        h1 {
-            font-size: 36px;
-            background-image: linear-gradient(90deg, rgb(248, 237, 248), maroon);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-family: 'Poppins', sans-serif;
-            letter-spacing: 0.8px;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .card {
-            background-color: #fff;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 10px;
-            margin: 10px 0;
-            transition: transform 1.3s ease;
-        }
-
-        .card:hover {
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-            font-size: 28px;
-            letter-spacing: 0.6px;
-        }
-
-        p {
-            font-size: 16px;
-            line-height: 1.6;
-        }
-
-        .conclusion {
-            font-weight: bold;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-        }
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
@@ -90,7 +22,7 @@
 
         </div>
 
-        <div class="card">
+        <div class="card reveal">
             <p><b>2. Personal Growth and Fulfillment</b></p>
             <p>Lifelong learning isn't just about career advancement; it's also about personal growth and fulfillment.
                 Acquiring new knowledge and skills can be a deeply satisfying experience. It keeps your mind engaged and
@@ -99,7 +31,7 @@
         </div>
 
         <!-- Include additional points as needed -->
-        <div class="card">
+        <div class="card reveal">
             <p><b>3. Problem-Solving and Critical Thinking</b></p>
             <p>Lifelong learning sharpens your problem-solving and critical thinking abilities. 
                 When you continually challenge your mind, you become more adept at analyzing situations,
@@ -107,14 +39,14 @@
                 both your professional and personal life.</p>
         </div>
 
-        <div class="card">
+        <div class="card reveal">
             <p><b>4. Staying Relevant in the Digital Age</b></p>
             <p>The digital age has brought about profound changes in the way we live and work. The ability 
                 to navigate the digital world is now a fundamental skill. Lifelong learning can help you 
                 stay current with digital tools, platforms, and trends, ensuring you are not left behind 
                 in an increasingly digitalized society.</p>
         </div>
-        <div class="card">
+        <div class="card reveal">
             <p><b>5. Enhancing Social Connections</b></p>
             <p>Engaging in lifelong learning can also lead to valuable social connections. 
                 Joining classes, workshops, or online communities related to your interests can 
@@ -122,7 +54,7 @@
                 support, collaboration, and friendship.</p>
         </div>
 
-        <div class="card">
+        <div class="card reveal">
             <p><b>6. Keeping Your Mind Sharp</b></p>
             <p>As we age, it's important to keep our minds active to prevent cognitive decline. 
                 Lifelong learning is like a workout for your brain. It stimulates your cognitive 
@@ -135,37 +67,9 @@
     </div>
 
     <footer>
-        &copy; 2023 YourWebsite.com
+        &copy; 2023 Pranav
     </footer>
-    <script>
-        // Get all the card elements
-        const cards = document.querySelectorAll('.card');
-
-        cards.forEach((card) => {
-            card.addEventListener('mouseover', () => {
-                // Elevate the hovered card
-                card.style.transform = 'scale(1.1)';
-                card.style.width = '1000px';
-                card.style.backgroundColor = '#ccaa55';
-                // Gradually hide other cards
-                cards.forEach((otherCard) => {
-                    if (otherCard !== card) {
-                        otherCard.style.transform = 'scale(0.0)';
-                    }
-                });
-            });
-
-            card.addEventListener('mouseout', () => {
-                // Reset the transformations on mouseout
-                card.style.transform = 'scale(1)';
-                cards.forEach((otherCard) => {
-                    otherCard.style.transform = 'scale(1)';
-                    otherCard.style.width = '760px'
-                    otherCard.style.backgroundColor = 'white';
-                });
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 
 
 </body>
